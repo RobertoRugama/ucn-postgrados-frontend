@@ -55,11 +55,9 @@
             <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-cog fa-lg"></i> Settings</a></li>
             <li><a class="dropdown-item" href="page-user.html"><i class="fa fa-user fa-lg"></i> Profile</a></li>
             <li><a class="dropdown-item" href="page-login.html"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
-            <router-link v-if="authenticated" to="/login" v-on:click.native="logout()" replace>Logout</router-link>
           </ul>
         </li>
       </ul>
-        <router-view @authenticated="setAuthenticated" />
       <img class="logo" src="./../../assets/logo.png">
     </header>
 </template>
